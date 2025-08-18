@@ -1,5 +1,5 @@
 class Solution {
-    final double EPS = 1e-6;
+    final double EPS = 1e-6;  // 1×10^-6 = 0.000001
 
     public boolean judgePoint24(int[] cards) {
         List<Double> nums = new ArrayList<>();
