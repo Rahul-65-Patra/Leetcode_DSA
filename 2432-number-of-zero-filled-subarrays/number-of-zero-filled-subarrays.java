@@ -5,13 +5,11 @@ class Solution {
         
         for (int num : nums) {
             if (num == 0) {
-                // Increment the streak length
-                currentStreak++;
-                // Add the streak contribution
-                ans += currentStreak;
-            } else {
-                // Reset the streak when non-zero is found
-                currentStreak = 0;
+                currentStreak++;  // Increment the streak length
+                ans += currentStreak;  // Add the streak contribution
+            } 
+            else {
+                currentStreak = 0; // Reset the streak when non-zero is found
             }
         }
         
