@@ -12,7 +12,7 @@ public:
        // fill the map using [i+j]
         for(int i=0;i<m;i++){
             for(int j=0;j<n;j++){
-                mp[i+j].push_back(mat[i][j]);
+                mp[i+j].push_back(mat[i][j]);   //index-->  i+j = 0+1 =1, 0+2=2,2+1=3 
             }
         }
         bool flip = true;
@@ -25,7 +25,8 @@ public:
           for(int &num : it.second){
             ans.push_back(num);
           }
-          flip = !flip;
+
+          flip = !flip;  // change direction
         }
         return ans;
     }
