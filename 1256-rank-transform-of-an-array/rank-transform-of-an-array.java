@@ -1,5 +1,7 @@
 class Solution {
     public int[] arrayRankTransform(int[] arr) {
+        // time complexity--> O(n log n) ans spce complexity-> O(n)
+        
         int[] sorted = arr.clone();   // clone full array
         Arrays.sort(sorted);   // 10,20,30,40
 
@@ -7,7 +9,7 @@ class Solution {
         int rank=1;
         for(int num : sorted){   // num= [10,20,30,40]
             if(!m.containsKey(num)){
-                m.put(num,rank++);   // 10->1. 20->1, 30->1, 40->1
+                m.put(num,rank++);   // 10->1. 20->2, 30->3, 40->4
             }
         }
 
