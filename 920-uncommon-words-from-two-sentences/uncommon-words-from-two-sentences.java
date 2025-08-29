@@ -1,8 +1,9 @@
 class Solution {
     public String[] uncommonFromSentences(String s1, String s2) {
         
+        // time and space complexity--> )(n+m)
+        
         Map<String,Integer>freq = new HashMap<>();
-
 
         for(String w : s1.split(" ")){   // count words in s1
             freq.put(w,freq.getOrDefault(w,0)+1);
