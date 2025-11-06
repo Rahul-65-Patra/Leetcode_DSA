@@ -23,11 +23,14 @@ public:
 
         //----------------------------
 
+          int n = nums.size();
+           int expSum = n * (n+1)/2;
+           int actSum = 0;
 
-        int ans=nums.size();
-        for(int i=0;i<nums.size();i++){
-            ans = ans^i^nums[i];
-        }
-        return ans;
+           for(int num : nums){
+              actSum+=num;
+           }
+           int missing = expSum - actSum;
+           return missing;
     }
 };
