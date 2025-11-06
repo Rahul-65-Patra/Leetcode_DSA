@@ -11,7 +11,7 @@ public:
         // }
         // return sum-sum1;
 
-       //-------------------- Using XOR Operator --------------------
+       //-------------------- Using XOR Operator time Complexity--> O(n) and space complexity--> O(1) --------------------
         
         // int ans=nums.size();
         // for(int  i=0;i<nums.size();i++)
@@ -21,7 +21,7 @@ public:
 
 
 
-        //----------------------------
+        //---------------------------- time Complexity--> O(n) and space complexity--> O(1) -----
 
           int n = nums.size();
            int expSum = n * (n+1)/2;
