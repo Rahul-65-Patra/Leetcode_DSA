@@ -14,5 +14,8 @@ public:
             left[mid]++;
         }
         return ans;
+
+
+         
     }
 };
